@@ -1,6 +1,6 @@
 # Hammer
 
-The source code and dataset mentioned in the paper ```Hammer: Robust Function-Calling for On-Device Language Models via Function Masking```.  
+The source code and dataset mentioned in the paper ```Hammer: Robust Function-Calling for On-Device Language Models via Function Masking```. 
 
 ## Overview
 
