@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
+if [ $# -lt 1 ]; then
+  echo "Usage: bash train.sh <MODEL>"
+  exit 1
+fi
 
+MODEL=$1
 
 CUR_DIR=$(cd $(dirname $0);pwd)
 pwd_DIR=$(dirname $(dirname $CUR_DIR))
 LLAMA_FACTORY_HOME="${pwd_DIR}/LLaMA-Factory"
 DATASET_DIR="${pwd_DIR}/data"
-MODEL="Qwen/Qwen2-1.5B-Instruct"
 DATASET="masking_sft_data"
-OUTPUT_DIR="${pwd_DIR}/ckpt/hammer-1.5b"
+OUTPUT_DIR="${pwd_DIR}/ckpt/ $(basename $MODEL)-sft"
 num_gpus=$(python -c 'import torch; print(torch.cuda.device_count())')
 
 deepspeed --num_gpus $num_gpus "${LLAMA_FACTORY_HOME}/src/train.py" \
