@@ -1,6 +1,7 @@
 # Hammer
 
-Welcome to the Hammer repository! This is the official implementation of our method introduced in the paper **"Robust Function-Calling for On-Device Language Models via Function Masking"**. The Hammer series models enhance function-calling capabilities in language models, making them suitable for deployment on resource-constrained devices.
+Welcome to the Hammer repository! This is the official implementation of our method introduced in the paper **"Robust Function-Calling for On-Device Language Models via Function Masking"**. The Hammer series models enhance the function-calling capabilities of language models, making them ideal for deployment on resource-constrained devices and empowering developers to create personalized, on-device applications
+
 
 ## Overview
 
