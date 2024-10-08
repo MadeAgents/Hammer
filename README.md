@@ -6,7 +6,7 @@ Welcome to the Hammer repository! This is the official implementation of our met
 
 The Hammer series employs function masking to selectively focus on specific functions during inference, improving the robustness and efficiency of function-calling. These methods are especially valuable for on-device language processing applications where computational resources are limited.
 
-For an in-depth discussion on Hammer and the validation experiments, please refer to our [paper](https://huggingface.co/MadeAgents).
+For an in-depth discussion on Hammer and the validation experiments, please refer to our [paper](https://arxiv.org/pdf/2410.04587).
 
 ## Models
 
@@ -39,3 +39,24 @@ Based on the original data of 'xlam_function_calling_60k' and 'xlam-7.5k-irrelev
 ### Train the Model
 ```bash train.sh```
 In the 'train.sh' file, 'MODEL' represents the path of the base model. You can choose a base model from the Qwen series. 'OUTPUT_DIR' refers to the target path for saving the LoRA adapter.
+
+
+
+## Evaluation
+To evaluate a model on a specific dataset, you can run the evaluation script 'eval.sh'. The script requires two parameters: MODEL (the path to the model) and DATASET (the dataset to be used for evaluation).
+
+### Available Datasets
+- apibank_l1
+- apibank_l2
+- NexusRaven
+- sealtool
+- toolalpaca
+
+### Running the Evaluation
+Run the following command to start the evaluation:
+
+```bash eval.sh <MODEL> <DATASET>```
+
+For example, to evaluate the Hammer1.0-3b model on the NexusRaven dataset:
+
+```bash eval.sh /path/to/Hammer1.0-3b NexusRaven```

@@ -1,5 +1,20 @@
 {
   "masking_sft_data": {
     "file_name": "masking_sft_data.json"
+  },
+  "apibank_l1": {
+    "file_name": "apibank_l1.json"
+  },
+  "apibank_l2": {
+    "file_name": "apibank_l2.json"
+  },
+  "NexusRaven": {
+    "file_name": "NexusRaven.json"
+  },
+  "sealtool": {
+    "file_name": "sealtool.json"
+  },
+  "toolalpaca": {
+    "file_name": "toolalpaca.json"
   }
 }
