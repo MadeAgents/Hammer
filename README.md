@@ -54,3 +54,16 @@ Run the following command to start the evaluation:
 For example, to evaluate the Hammer1.0-3b model on the NexusRaven dataset:
 
 ```bash eval.sh /path/to/Hammer1.0-3b NexusRaven```
+
+## Citation
+
+If you use Hammer, please cite our paper:
+```@misc{lin2024hammer,
+      title={Hammer: Robust Function-Calling for On-Device Language Models via Function Masking}, 
+      author={Qiqiang Lin and Muning Wen and Qiuying Peng and Guanyu Nie and Junwei Liao and Jun Wang and Xiaoyun Mo and Jiamu Zhou and Cheng Cheng and Yin Zhao and Jun Wang and Weinan Zhang},
+      year={2024},
+      eprint={2410.04587},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.04587 }, 
+}```
