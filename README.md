@@ -6,7 +6,7 @@ The source code and dataset mentioned in the paper ```Hammer: Robust Function-Ca
 
 The Hammer series employs function masking to selectively focus on specific functions during inference, improving the robustness and efficiency of function-calling. These methods are especially valuable for on-device language processing applications where computational resources are limited.
 
-For an in-depth discussion on Hammer and the validation experiments, please refer to our [paper](https://arxiv.org/pdf/2410.04587).
+For an in-depth discussion on Hammer and the validation experiments, please refer to our [paper](https://arxiv.org/abs/2410.04587).
 
 We have released several models based on the ```Function Masking``` techniques discussed in the paper, available on Hugging Face. Detailed model descriptions can be found at [MadeAgents on Hugging Face](https://huggingface.co/MadeAgents).
 
