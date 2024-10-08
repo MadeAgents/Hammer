@@ -1,14 +1,13 @@
 # Hammer
 
-The source code and dataset mentioned in the paper ```Hammer: Robust Function-Calling for On-Device Language Models via Function Masking```.
+The source code and dataset mentioned in the paper [```Hammer: Robust Function-Calling for On-Device Language Models via Function Masking```](https://arxiv.org/pdf/2410.04587). 
 
 ## Overview
 
 The Hammer series employs function masking to selectively focus on specific functions during inference, improving the robustness and efficiency of function-calling. These methods are especially valuable for on-device language processing applications where computational resources are limited.
 
-For an in-depth discussion on Hammer and the validation experiments, please refer to our [paper](https://arxiv.org/abs/2410.04587).
 
-We have released several models based on the ```Function Masking``` techniques discussed in the paper, available on Hugging Face. Detailed model descriptions can be found at [MadeAgents on Hugging Face](https://huggingface.co/MadeAgents).
+We have released several models based on the ```Function Masking``` techniques discussed in the paper, available on [MadeAgents on Hugging Face](https://huggingface.co/MadeAgents).
 
 ## Fine-Tuning
 
@@ -37,14 +36,14 @@ To evaluate a model on a specific dataset, you can run the evaluation script 'ev
 
 ### Available Datasets
 
-- apibank_l1 ([API-Bank](https://huggingface.co/datasets/liminghao1630/API-Bank/tree/main))
-- apibank_l2 ([API-Bank](https://huggingface.co/datasets/liminghao1630/API-Bank/tree/main))
-- NexusRaven ([NexusRaven](https://huggingface.co/datasets/Nexusflow/Function_Call_Definitions))
-- sealtool ([Seal-Tools](https://github.com/fairyshine/Seal-Tools))
-- toolalpaca ([ToolAlpaca](https://github.com/tangqiaoyu/ToolAlpaca))
 
-These datasets are processed versions of the original datasets, reconstructed based on the Hammer function calling prompt (examples available at [Hammer dataset example](https://github.com/MadeAgents/Hammer/blob/main/data/masking_sft_data_example.json)). Note that the Seal-Tools dataset is single-turn only.  For the APIBank dataset, the conversation history is treated as a query input to the model
+- **apibank_l1** ([API-Bank](https://huggingface.co/datasets/liminghao1630/API-Bank/tree/main)): This dataset underwent prompt conversion and incorporated conversation history as query input to the model, resulting in 399 samples.
+- **apibank_l2** ([API-Bank](https://huggingface.co/datasets/liminghao1630/API-Bank/tree/main)): Prompt conversion was applied, and 8 problematic samples (where the label function was not in the candidate functions) were filtered out, resulting in 127 samples.
+- **NexusRaven** ([NexusRaven](https://huggingface.co/datasets/Nexusflow/Function_Call_Definitions)): This dataset was processed with prompt conversion, resulting in 318 samples.
+- **sealtool** ([Seal-Tools](https://github.com/fairyshine/Seal-Tools)): Prompt conversion was applied, and only single-turn test set samples were retained, resulting in a total of 294 samples.
+- **toolalpaca** ([ToolAlpaca](https://github.com/tangqiaoyu/ToolAlpaca)): Textual tool definitions were converted to JSON format, and prompt conversion was applied, resulting in 114 samples.
 
+These datasets are processed versions of the original datasets, reconstructed based on the Hammer function calling prompt (examples available at [Hammer dataset example](https://github.com/MadeAgents/Hammer/blob/main/data/masking_sft_data_example.json))
 
 ### Running the Evaluation
 
