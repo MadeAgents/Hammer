@@ -25,7 +25,7 @@ python data_processing.py
 
 ### Train the Model
 
-After setting up the training data, you can now train the model. Replace <MODEL> with the path or name of the base model you want to use:
+After setting up the training data, you can now train the model. Replace `<MODEL>` with the path or name of the base model you want to use:
 
 ```
 bash train.sh <MODEL>
