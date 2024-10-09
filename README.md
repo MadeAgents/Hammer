@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ### Data Processing
 
-Download the datasets [`Salesforce/xlam-function-calling-60k`](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) and [`MadeAgents/XLAM-7.5k-Irrelevance`](https://huggingface.co/datasets/MadeAgents/XLAM-7.5k-Irrelevance) and place them in the `data` directory. Simply run the command below to prepare the training data:
+Download the datasets [`Salesforce/xlam-function-calling-60k`](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) and [`MadeAgents/xlam-irrelevance-7.5k`](https://huggingface.co/datasets/MadeAgents/xlam-irrelevance-7.5k) and place them in the `data` directory. Simply run the command below to prepare the training data:
 
 ```
 python data_processing.py
@@ -25,7 +25,7 @@ python data_processing.py
 
 ### Train the Model
 
-After setting up the training data, you can now train the model. Replace `\<MODEL\>` with the path or name of the base model you want to use:
+After setting up the training data, you can now train the model. Replace <MODEL> with the path or name of the base model you want to use:
 
 ```
 bash train.sh <MODEL>
