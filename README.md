@@ -25,7 +25,7 @@ python data_processing.py
 
 ### Train the Model
 
-After setting up the training data, you can now train the model. Replace `<MODEL>` with the path or name of the base model you want to use:
+After setting up the training data, you can now train the model using [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). Replace `<MODEL>` with the path or name of the base model you want to use:
 
 ```
 bash train.sh <MODEL>
@@ -61,7 +61,8 @@ bash eval.sh /path/to/Hammer1.0-3b NexusRaven
 ## Citation
 
 If you use Hammer, please cite our paper:
-```@misc{lin2024hammer,
+```
+@misc{lin2024hammer,
       title={Hammer: Robust Function-Calling for On-Device Language Models via Function Masking}, 
       author={Qiqiang Lin and Muning Wen and Qiuying Peng and Guanyu Nie and Junwei Liao and Jun Wang and Xiaoyun Mo and Jiamu Zhou and Cheng Cheng and Yin Zhao and Jun Wang and Weinan Zhang},
       year={2024},
@@ -69,4 +70,5 @@ If you use Hammer, please cite our paper:
       archivePrefix={arXiv},
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2410.04587 }, 
-}```
+}
+```
