@@ -5,16 +5,16 @@
 <p align="center">
   <a href="https://arxiv.org/pdf/2410.04587">Paper</a> |
   <a href="https://huggingface.co/MadeAgents">Model</a> |
-    <a href="https://github.com/MadeAgents/Hammer/tree/main?tab=readme-ov-file##Usage">Usage</a> |
-  <a href="https://github.com/MadeAgents/Hammer/tree/main?tab=readme-ov-file##Fine-Tuning">Fine-Tuning</a> |
-  <a href="https://github.com/MadeAgents/Hammer/tree/main?tab=readme-ov-file##Evaluation">Evaluation</a> |
+    <a href="https://github.com/MadeAgents/Hammer/tree/main?tab=readme-ov-file#Usage">Usage</a> |
+  <a href="https://github.com/MadeAgents/Hammer/tree/main?tab=readme-ov-file#Fine-Tuning">Fine-Tuning</a> |
+  <a href="https://github.com/MadeAgents/Hammer/tree/main?tab=readme-ov-file#Evaluation">Evaluation</a> |
 
 </p>
 
 ---
 
 ## 🎉 News
-- **[12.2024]**: We are excited to announce the release of [Hammer2.1](https://huggingface.co/MadeAgents), our suite of Large Action Models! These models have achieved impressive rankingson the [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html#leaderboard).
+- **[12.2024]**: We are excited to announce the release of [Hammer2.1](https://huggingface.co/collections/MadeAgents/hammer21-675a97053753e8fa70a3f0ac), our suite of Large Action Models! These models have achieved impressive rankingson the [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html#leaderboard).
 - **[10.2024]**: We're excited to release lightweight [Hammer 2.0 models](https://huggingface.co/collections/MadeAgents/hammer20-66f4dee539f7b2c95224012a) (0.5B , 1.5B , 3B , and 7B) with strong function calling capability, which empower developers to build personalized, on-device agentic applications.
 - **[10.2024]**: We have now made our code and accompanying paper for [**Hammer: Robust Function-Calling for On-Device Language Models via Function Masking**](https://arxiv.org/pdf/2410.04587) publicly available.
 - **[09.2024]**: [Hammer model](https://huggingface.co/collections/MadeAgents/hammer10-66f4ddaad0ad3a5e3acd24f5) is released! Focusing on on-device applications, we release a number of models from 1.5B, 4B to 7B parameters.
@@ -262,7 +262,7 @@ We conduct a comprehensive evaluation of the performance of the model on tool us
 - **sealtool** ([Seal-Tools](https://github.com/fairyshine/Seal-Tools)): Only single-turn test data is considered, and the data format is converted, resulting in 294 samples.
 - **toolalpaca** ([ToolAlpaca](https://github.com/tangqiaoyu/ToolAlpaca)): Textual tool definitions were converted to JSON format, and prompt conversion was applied, resulting in 114 samples.
 
-The processed evaluation datasets are placed under the `data` directory, and are all in the Hammer function calling prompt format (examples available at [Hammer dataset example](https://github.com/MadeAgents/Hammer/blob/main/data/train/masking_sft_data_example.json))
+The processed evaluation datasets are placed under the `data/train` directory, and are all in the Hammer function calling prompt format (examples available at [Hammer dataset example](https://github.com/MadeAgents/Hammer/blob/main/data/train/masking_sft_data_example.json))
 
 ### Evaluate Hammer Model
 
@@ -280,7 +280,7 @@ bash scripts/eval.sh /path/to/Hammer2.1-7b NexusRaven
 
 ### Evaluate Other Models
 
-If you want to test the performance of other models, you can obtain the original datasets from the [`data/test/original`](data/test/original) directory. Use the model you wish to test to perform inference, generating a JSONL file that stores the JSON results, which should contain `label` and `predict` fields. You can refer to the format in [`data/examples_eval.jsonl`](data/examples_eval.jsonl). Finally, run the evaluation script with the following command:
+If you want to test the performance of other models, you can obtain the original datasets from the [`data/test/original`](https://github.com/MadeAgents/Hammer/blob/main/data/test/original) directory. Use the model you wish to test to perform inference, generating a JSONL file that stores the JSON results, which should contain `label` and `predict` fields. You can refer to the format in [`data/examples_eval.jsonl`](https://github.com/MadeAgents/Hammer/blob/main/data/examples_eval.jsonl). Finally, run the evaluation script with the following command:
 ```
 python evaluation/evaluate.py <outputs_dir>
 ```
