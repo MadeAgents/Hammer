@@ -280,7 +280,7 @@ bash scripts/eval.sh /path/to/Hammer2.1-7b NexusRaven
 
 ### Evaluate Other Models
 
-If you want to test the performance of other models, you can obtain the original datasets from the [`data/test/original`](https://github.com/MadeAgents/Hammer/blob/main/data/test/original) directory. Use the model you wish to test to perform inference, generating a JSONL file that stores the JSON results, which should contain `label` and `predict` fields. You can refer to the format in [`data/examples_eval.jsonl`](https://github.com/MadeAgents/Hammer/blob/main/data/examples_eval.jsonl). Finally, run the evaluation script with the following command:
+If you want to test the performance of other models, you can obtain the original datasets from the [`data/test/original`](https://github.com/MadeAgents/Hammer/blob/main/data/test/original) directory. Use the model you wish to test to perform inference, generating a JSONL file that stores the JSON results, which should contain `label` and `predict` fields. You can refer to the format in [`data/examples_eval.jsonl`](https://github.com/MadeAgents/Hammer/blob/main/data/example_eval.jsonl). Finally, run the evaluation script with the following command:
 ```
 python evaluation/evaluate.py <outputs_dir>
 ```
