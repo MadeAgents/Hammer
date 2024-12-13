@@ -1,20 +1,35 @@
 {
-  "masking_sft_data": {
-    "file_name": "masking_sft_data.json"
+  "masking_sft_data_hammer": {
+    "file_name": "train/masking_sft_data.json"
   },
-  "apibank_l1": {
-    "file_name": "apibank_l1.json"
+  "apibank_l1_hammer": {
+    "file_name": "test/hammer/apibank_l1.json"
   },
-  "apibank_l2": {
-    "file_name": "apibank_l2.json"
+  "apibank_l2_hammer": {
+    "file_name": "test/hammer/apibank_l2.json"
   },
-  "NexusRaven": {
-    "file_name": "NexusRaven.json"
+  "NexusRaven_hammer": {
+    "file_name": "test/hammer/NexusRaven.json"
   },
-  "sealtool": {
-    "file_name": "sealtool.json"
+  "sealtool_hammer": {
+    "file_name": "test/hammer/sealtool.json"
   },
-  "toolalpaca": {
-    "file_name": "toolalpaca.json"
+  "toolalpaca_hammer": {
+    "file_name": "test/hammer/toolalpaca.json"
+  },
+  "apibank_l1_hammer2.1": {
+    "file_name": "test/hammer2.1/apibank_l1.json"
+  },
+  "apibank_l2_hammer2.1": {
+    "file_name": "test/hammer2.1/apibank_l2.json"
+  },
+  "NexusRaven_hammer2.1": {
+    "file_name": "test/hammer2.1/NexusRaven.json"
+  },
+  "sealtool_hammer2.1": {
+    "file_name": "test/hammer2.1/sealtool.json"
+  },
+  "toolalpaca_hammer2.1": {
+    "file_name": "test/hammer2.1/toolalpaca.json"
   }
 }
