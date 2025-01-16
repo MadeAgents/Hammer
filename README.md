@@ -48,10 +48,11 @@ config = HammerConfig(base_url="http://localhost:8000/v1/", model="MadeAgents/Ha
 llm = HammerChatCompletion.from_config(config)
 
 # Example conversation
+
 messages = [
     {"role": "user", "content": "What's the weather like in New York?"},
-    {"role": "assistant","content": '```\n{"name": "get_weather", "arguments": {"location": "New York, NY ", "unit": "celsius"}\n```'},
-    {"role": "tool", "name": "get_weather", "content": '{"temperature": 72, "description": "Partly cloudy"}'},
+    {"role": "assistant","content": '','tool_calls': {"name": "get_weather", "arguments": {"location": "New York, NY ", "unit": "celsius"}}},
+    {"role": "tool", "name": "get_weather", "content": '{"temperature": 35, "description": "Partly cloudy"}'},
     {"role": "user", "content": "Now, search for the weather in San Francisco."}
 ]
 
@@ -82,7 +83,24 @@ tools = [
     }
 ]
 
+# tool calls
 response = llm.completion(messages, tools=tools)
+print(response)
+
+# non tool calls
+messages = [
+    {"role": "user", "content": "What's the weather like in New York?"},
+    {"role": "assistant","content": '','tool_calls': {"name": "get_weather", "arguments": {"location": "New York, NY ", "unit": "celsius"}}},
+    {"role": "tool", "name": "get_weather", "content": '{"temperature": 35, "description": "Partly cloudy"}'},
+]
+response = llm.completion(messages, tools=tools)
+print(response)
+
+response = llm.completion(messages)
+print(response)
+
+# chat
+response = llm.completion([{"role": "user", "content": "What's the weather like in New York?"}])#, tools=tools)
 print(response)
 ~~~
 
