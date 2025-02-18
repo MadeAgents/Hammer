@@ -14,6 +14,7 @@
 ---
 
 ## 🎉 News
+- **[02.2025]**: We are thrilled to announce that our paper has been accepted as a Spotlight at ICLR 2025!
 - **[12.2024]**: We are excited to announce the release of [Hammer2.1](https://huggingface.co/collections/MadeAgents/hammer21-675a97053753e8fa70a3f0ac), our suite of Large Action Models! These models have achieved impressive rankingson the [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html#leaderboard).
 - **[10.2024]**: We're excited to release lightweight [Hammer 2.0 models](https://huggingface.co/collections/MadeAgents/hammer20-66f4dee539f7b2c95224012a) (0.5B , 1.5B , 3B , and 7B) with strong function calling capability, which empower developers to build personalized, on-device agentic applications.
 - **[10.2024]**: We have now made our code and accompanying paper for [**Hammer: Robust Function-Calling for On-Device Language Models via Function Masking**](https://arxiv.org/pdf/2410.04587) publicly available.
