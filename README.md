@@ -14,6 +14,7 @@
 ---
 
 ## 🎉 News
+- **[06.2025]**: We are excited to announce that our model has been integrated into Google AI Edge! This integration allows for seamless on-device inference, enabling users to experience the power of our model directly on their mobile devices. For more details, please visit [Google AI Edge](https://ai.google.dev/edge/mediapipe/solutions/genai/function_calling/android).
 - **[02.2025]**: We are thrilled to announce that our paper has been accepted as a Spotlight at ICLR 2025!
 - **[12.2024]**: We are excited to announce the release of [Hammer2.1](https://huggingface.co/collections/MadeAgents/hammer21-675a97053753e8fa70a3f0ac), our suite of Large Action Models! These models have achieved impressive rankingson the [Berkeley Function-Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html#leaderboard).
 - **[10.2024]**: We're excited to release lightweight [Hammer 2.0 models](https://huggingface.co/collections/MadeAgents/hammer20-66f4dee539f7b2c95224012a) (0.5B , 1.5B , 3B , and 7B) with strong function calling capability, which empower developers to build personalized, on-device agentic applications.
@@ -305,7 +306,7 @@ python evaluation/evaluate.py <outputs_dir>
 ```
 
 # Licenses
-This code is licensed under cc-by-4.0.
+This code is licensed under Apache-2.0 License.
 
 # Citation
 
