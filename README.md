@@ -266,7 +266,14 @@ python train/data_processing.py
 
 ### Train the Model
 
-After setting up the training data, you can now train the model using [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). Replace `<MODEL>` with the path or name of the base model you want to use:
+After setting up the training data, you can train the model using [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). Please download the LLaMA-Factory repository and follow its official instructions for model training.
+#### Download LLaMA-Factory to the train directory:
+```
+cd train  
+git clone https://github.com/hiyouga/LLaMA-Factory.git
+```
+
+#### Replace `<MODEL>` with the path or name of the base model you want to use:
 
 ```
 bash scripts/train.sh <MODEL>
